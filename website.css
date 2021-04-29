@@ -1,0 +1,151 @@
+/* General Styles START */
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 100%;
+}
+
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    background-color: #5A0016;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.content-section
+{
+    margin: 1em;
+}
+
+.container
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-title
+{
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.5em;
+}
+/* General Styles END */
+
+
+/* Header Styles START */
+.header
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 8px 4px -2px black;
+}
+
+.header-title-and-bars-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title
+{
+    font-size: 1.5em;
+    font-style: italic;
+    color: #666666; /* Charcoal grey */
+    margin-left: 0.5em;
+}
+
+.header-links
+{
+    padding: 1rem;
+}
+
+.header-links a
+{
+    display: inline-block;
+    color: #666666;
+    font-size: 1.1em;
+    padding: 0.5em;
+    transition: 0.3s;
+}
+
+.header-links a:not(:last-child)
+{
+    margin-right: 0.5rem;
+}
+
+.header-links a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.fa-bars
+{
+    color: #666666;
+    cursor: pointer;
+    display: none;
+    padding-right: 0.5em;
+}
+/* Header Styles END */
+
+
+/* Media Styles START */
+@media (max-width: 455px)
+{
+    /* Header Styles START */
+    .header
+    {
+        align-items: flex-start;
+    }
+
+    .header-title
+    {
+        margin-left: 0.4rem;
+    }
+
+    .fa-bars
+    {
+        display: block;
+    }
+
+    .header-links
+    {
+        display: none;
+
+    }
+
+    .header-links a:not(:last-child)
+    {
+        margin-bottom: 0.5rem;
+    }
+
+    .active
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    /* Header Styles END */
+}
