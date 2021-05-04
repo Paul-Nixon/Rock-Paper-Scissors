@@ -469,6 +469,11 @@ a
     color: white;
     border: 3px solid #98ff98;
 }
+
+.modal-btn:hover
+{
+    background-color: rgb(138, 33, 33);
+}
 /* rock-paper-scissors.html Styles END */
 
 
