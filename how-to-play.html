@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How-to-Play</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="website.css">
+    <script src="header-menu.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -17,15 +20,54 @@
         <div class="header-links">
             <a href="/">Home</a>
             <a href="about.html">About</a>
-            <a href="how-to-play.html">How-to-Play</a>
-            <a href="#">Rock-Paper-Scissors</a>
+            <a href="#">How-to-Play</a>
+            <a href="rock-paper-scissors.html">Rock-Paper-Scissors</a>
         </div>
     </header>
 
     <!-- Main Section -->
     <section class="content-section">
-        <div class="container how-to-play-container">
-            
+        <div class="container">
+            <h2 class="section-title">How-to-Play</h2>
+
+            <div class="details-container">
+                <!-- Layout -->
+                <details>
+                    <summary>Layout</summary>
+
+                    <ul class="nested-list">
+                        <li>Scoreboard (above the images)</li>
+                        <li>Images (center of the screen)</li>
+                    </ul>
+                </details>
+
+            <!-- Gameplay -->
+            <details>
+                <summary>Gameplay</summary>
+
+                <!-- Selecting a Choice -->
+                <details>
+                    <summary class="sub-summary">Selecting a Choice</summary>
+
+                    <p class="explanation-text">
+                        Click one of the images at the center of the screen to select rock, paper,
+                        or scissors. If you guess correctly or incorrectly, or draw with the CPU, then
+                        the respective score on the scoreboard will increase by 1.
+                    </p>
+                </details>
+
+                <!-- Postgame -->
+                <details>
+                    <summary class="sub-summary">Postgame</summary>
+
+                    <p class="explanation-text">
+                        If the player won or loss, a modal/pop-up window will appear containing text that
+                        indicates whether they won or lost, a retry button and a close button which takes them
+                        to the About page when clicked.
+                    </p>
+                </details>
+            </details>
+            </div>
         </div>
     </section>
 </body>

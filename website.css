@@ -138,6 +138,11 @@ a
   margin: 1rem;
 }
 
+.intro-title, .subtitle
+{
+    color: white;
+}
+
 .intro-title
 {
   font-size: 2.5em;
@@ -189,6 +194,27 @@ a
 .about-link-btn:hover
 {
     background-color: rgb(104, 27, 27);
+}
+
+.img-wrapper
+{
+    height: 500px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.rps-example-img
+{
+    background-image: url(https://user-images.githubusercontent.com/42850145/117079574-a3d2b600-ad01-11eb-8d33-e8ff6812e339.png);
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-height: 70vh;
+    min-width: 30vw;
 }
 /* index.html Styles END */
 
@@ -271,6 +297,70 @@ a
 /* about.html Styles END */
 
 
+/* how-to-play.html Styles START */
+.how-to-play-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.how-to-play-nav
+{
+    list-style-type: none;
+    color: white;
+}
+
+.how-to-play-nav li
+{
+  font-size: 25px;
+}
+
+.how-to-play-nav li a
+{
+  color: white;
+}
+
+.details-container
+{
+    margin-top: 5rem; /* Equivalent to 80px */
+}
+
+summary
+{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 1.25rem; /* Equivalent to 20px */
+    width: 100%;
+}
+
+.nested-list
+{
+    width: 100%;
+    color: white;
+    margin-left: 2.25rem; /* Equivalent to 36px */
+}
+
+.sub-summary
+{
+    margin-left: 2.25rem; /* Equivalent to 36px */
+}
+
+.explanation-text
+{
+    text-align: center;
+    font-size: large;
+    font-weight: 550;
+    color: white;
+    margin-left: 4.25rem; /* Equivalent to 68px */
+}
+/* how-to-play.html Styles END */
+
+
 /* rock-paper-scissors.html Styles START */
 .rps-container
 {
@@ -331,6 +421,7 @@ a
     justify-content: center;
     align-items: center;
     width: 75%;
+    flex-shrink: 0;
 }
 
 .rps-img
@@ -478,6 +569,56 @@ a
 
 
 /* Media Styles START */
+@media (max-width: 805px)
+{
+    /* index.html Styles START */
+    .intro-container
+    {
+        flex-direction: column;
+
+    }
+
+    .img-wrapper, .rps-example-img
+    {
+        flex-shrink: 0;
+    }
+
+    .rps-example-img
+    {
+        max-height: 60vh;
+        min-width: 50vw;
+    }
+    /* index.html Styles END */
+}
+
+
+@media (max-width: 580px)
+{
+    /* about.html Styles START */
+    .profile-text
+    {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* about.html Styles END */
+
+
+    /* rock-paper-scissors.html Styles START */
+    .scoreboard
+    {
+        flex-direction: column;
+    }
+
+    .rps-img
+    {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+    /* rock-paper-scissors.html Styles END */
+}
+
+
 @media (max-width: 455px)
 {
     /* Header Styles START */
